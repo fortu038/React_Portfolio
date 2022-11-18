@@ -8,7 +8,7 @@ import Project from './components/Project';
 function App() {
   return (
     <div className="App">
-      <nav>
+      <nav className="App-nav">
         <Navigation />
       </nav>
       <header className="App-header">
@@ -27,7 +27,7 @@ function App() {
         </a>
         <Project />
       </header>
-      <footer>
+      <footer className="App-footer">
         <Footer />
       </footer>
     </div>
