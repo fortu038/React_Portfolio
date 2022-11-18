@@ -8,9 +8,7 @@ import Project from './components/Project';
 function App() {
   return (
     <div className="App">
-      <nav className="App-nav">
-        <Navigation />
-      </nav>
+      <Navigation />
       <header className="App-header">
         <Header />
         <img src={logo} className="App-logo" alt="logo" />

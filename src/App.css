@@ -1,3 +1,9 @@
+:root {
+  --text: #090446;
+  --background: #786f52;
+  --softBlue: #61dafb;
+}
+
 .App {
   text-align: center;
 }
@@ -13,44 +19,52 @@
   }
 }
 
+.App-nav {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: var(--text);
+}
+
+.App-nav div {
+  margin: 0vh 10vh;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: var(--background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text);
 }
 
-.App-nav {
-  background-color: #282c34;
+.App-footer {
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-footer {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text);
 }
 
 .footer-image {
-  /* height: 10vmin; */
   max-height: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--softBlue)
 }
 
 @keyframes App-logo-spin {
