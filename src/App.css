@@ -14,6 +14,18 @@ a:hover {
   color: var(--softBlue)
 }
 
+@media screen and (min-width: 601px) {
+  * {
+    font-size: calc(10px + 2vmin);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: calc(2px + 2vmin);
+  }
+}
+
 /* App.js Styling */
 .App {
   text-align: center;
@@ -46,8 +58,20 @@ a:hover {
 }
 
 /* Footer.js Styling */
+.Footer a:hover {
+  opacity: 0.7;
+}
+
 .Footer-image {
   max-height: 10vh;
+  margin: 1vh 5vw;
+}
+
+@media screen and (max-width: 600px) {
+  .Footer-image {
+    max-height: 5vh;
+    margin: 0.5vh 2.5vw;
+  }
 }
 
 /* Header.js Styling */
@@ -65,7 +89,48 @@ a:hover {
 }
 
 .Navigation div {
-  margin: 0vh 10vh;
+  padding: 1vw;
 }
 
 /* Project.js Styling */
+.Project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Project-container {
+  position: relative;
+  margin: 1vh 1vw;
+}
+
+.Project-container:hover .Project-img {
+  opacity: 0.9;
+}
+
+.Project-container:hover .Project-overlay {
+  opacity: 1;
+}
+
+.Project-img {
+  opacity: 1;
+  display: block;
+  backface-visibility: hidden;
+  height: calc(35vh + 2vmin);
+  width: calc(30vw + 2vmin);
+}
+
+.Project-overlay {
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+  .Project-img {
+    height: calc(15vh + 2vmin);
+    width: calc(25vw + 2vmin);
+  }
+}

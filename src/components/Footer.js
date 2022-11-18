@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer () {
   return(
-    <div>
+    <div className="Footer">
       <a href="https://github.com/fortu038"> 
         <img 
           className="Footer-image"
