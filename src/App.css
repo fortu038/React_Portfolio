@@ -5,6 +5,10 @@
   --softBlue: #61dafb;
 }
 
+* {
+  background-color: var(--mocha);
+}
+
 a {
   color: var(--darkBlue);
   text-decoration: none;
@@ -15,13 +19,19 @@ a:hover {
 }
 
 @media screen and (min-width: 601px) {
-  * {
+  h2 {
+    font-size: calc(20px + 2vmin);
+  }
+  h3 {
     font-size: calc(10px + 2vmin);
   }
 }
 
 @media screen and (max-width: 600px) {
-  * {
+  h2 {
+    font-size: calc(4px + 2vmin);
+  }
+  h3 {
     font-size: calc(2px + 2vmin);
   }
 }
@@ -37,8 +47,7 @@ a:hover {
 }
 
 .App-header {
-  background-color: var(--mocha);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,14 +56,26 @@ a:hover {
   color: var(--darkBlue);
 }
 
+.App-header img {
+  height: calc(40vh + 2vmin);
+  width: calc(14vw + 2vmin);
+}
+
 .App-footer {
-  background-color: var(--mocha);
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: var(--darkBlue);
+}
+
+@media screen and (max-width: 600px) {
+  .App-header img {
+    height: calc(23vh + 2vmin);
+    width: calc(30vw + 2vmin);
+  }
 }
 
 /* Footer.js Styling */
@@ -79,13 +100,26 @@ a:hover {
 
 /* Navigation.js Styling */
 .Navigation {
-  background-color: var(--mocha);
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: var(--darkBlue);
+}
+
+.Navigation button {
+  background: none;
+	color: var(--darkBlue);
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.Navigation button:hover {
+  color: var(--softBlue);
 }
 
 .Navigation div {

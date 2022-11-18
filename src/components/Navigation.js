@@ -1,22 +1,22 @@
 import React from 'react';
 
-function Navigation () {
+function Navigation (props) {
   return(
     <nav className="Navigation">
       <div>
         <h2>My Portfolio</h2>
       </div>
       <div>
-        <a href="www.google.com/"><h3>About Me</h3></a>
+        <button onClick={props.handleClick}><h3>About Me</h3></button>
       </div>
       <div>
-        <a href="www.google.com/"><h3>Projects</h3></a>
+        <button onClick={props.handleClick}><h3>Projects</h3></button>
       </div>
       <div>
-        <a href="www.google.com/"><h3>Contacts</h3></a>
+        <button onClick={props.handleClick}><h3>Contact Me</h3></button>
       </div>
       <div>
-        <a href="www.google.com/"><h3>Resume</h3></a>
+        <a href={require("../assets/resume/CS Resume.docx")}><h3>Resume</h3></a>
       </div>
     </nav>
   )
