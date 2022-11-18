@@ -1,9 +1,20 @@
+/* General Styling */
 :root {
-  --text: #090446;
-  --background: #786f52;
+  --darkBlue: #090446;
+  --mocha: #786f52;
   --softBlue: #61dafb;
 }
 
+a {
+  color: var(--darkBlue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--softBlue)
+}
+
+/* App.js Styling */
 .App {
   text-align: center;
 }
@@ -13,65 +24,48 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-nav {
-  background-color: var(--background);
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-  font-size: calc(10px + 2vmin);
-  color: var(--text);
-}
-
-.App-nav div {
-  margin: 0vh 10vh;
-}
-
 .App-header {
-  background-color: var(--background);
+  background-color: var(--mocha);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: var(--text);
+  color: var(--darkBlue);
 }
 
 .App-footer {
-  background-color: var(--background);
+  background-color: var(--mocha);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: var(--text);
+  color: var(--darkBlue);
 }
 
-.footer-image {
+/* Footer.js Styling */
+.Footer-image {
   max-height: 10vh;
 }
 
-a {
-  color: var(--text);
-  text-decoration: none;
+/* Header.js Styling */
+
+
+/* Navigation.js Styling */
+.Navigation {
+  background-color: var(--mocha);
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: var(--darkBlue);
 }
 
-a:hover {
-  color: var(--softBlue)
+.Navigation div {
+  margin: 0vh 10vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Project.js Styling */

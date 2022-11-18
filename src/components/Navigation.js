@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navigation () {
   return(
-    <nav className="App-nav">
+    <nav className="Navigation">
       <div>
         <h2>My Portfolio</h2>
       </div>

@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Footer from './components/Footer';
-import Header from './components/Header';
 import Navigation from "./components/Navigation.js";
 import Project from './components/Project';
 
@@ -10,7 +9,6 @@ function App() {
     <div className="App">
       <Navigation />
       <header className="App-header">
-        <Header />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
