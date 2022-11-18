@@ -1,45 +1,25 @@
 import React from 'react';
 
 function Project (props) {
-  return(
-    // <div className="Project">
-    //   <div className="Project-container">
-    //     <a>
-    //       <img
-    //         className="Project-img"
-    //         src={require("../assets/images/group-project-1-screenshot.jpg")}
-    //         alt="A screenshot of a website titled Comparing Cities"
-    //       />
-    //     </a>
-    //     <div className="Project-overlay">
-    //       <h5>Comparing Cities</h5>
-    //     </div>
-    //   </div>
-    //   <div className="Project-container">
-    //     <a>
-    //       <img
-    //         className="Project-img"
-    //         src={require("../assets/images/group-project-2-screenshot.jpg")}
-    //         alt="A screenshot of a website titled Budgeteer"
-    //       />
-    //     </a>
-    //     <div className="Project-overlay">
-    //       <h5>Budgeteer</h5>
-    //     </div>
-    //   </div>
-    // </div>
-    
+  return( 
       <div className="Project-container">
         <a href={props.link}>
           <img
             className="Project-img"
-            src={require(props.imagePath)}
+            src={props.image}
             alt={props.altText}
           />
+          <div className="Project-overlay">
+            <h5>{props.projectTitle}</h5>
+            <a href={props.repo}>
+              <img
+                className="Project-github-img"
+                src={require("../assets/images/GitHub-Mark-64px.png")}
+                alt="The logo for GitHub. Clicking on it will redirect to the Github repo of this project."
+              />
+            </a>
+          </div>
         </a>
-        <div className="Project-overlay">
-          <h5>{props.projectTitle}</h5>
-        </div>
       </div>
   )
 }

@@ -122,6 +122,10 @@ a:hover {
   color: var(--softBlue);
 }
 
+button.Active {
+  color: var(--softBlue);
+}
+
 .Navigation div {
   padding: 1vw;
 }
@@ -147,6 +151,15 @@ a:hover {
   opacity: 1;
 }
 
+.Project-github-img {
+  position: absolute;
+  left: 25%;
+  top: 80%;
+  background-color: transparent;
+  max-width: 5vw;
+  max-height: 10vh;
+}
+
 .Project-img {
   opacity: 1;
   display: block;
@@ -157,6 +170,7 @@ a:hover {
 
 .Project-overlay {
   position: absolute;
+  color: var(--darkBlue);
   opacity: 0;
   left: 50%;
   top: 50%;
