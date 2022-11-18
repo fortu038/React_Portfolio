@@ -139,10 +139,11 @@ a:hover {
 }
 
 .Project-container:hover .Project-img {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
-.Project-container:hover .Project-overlay {
+.Project-container:hover .Project-overlay, h5 {
+  background-color: transparent;
   opacity: 1;
 }
 

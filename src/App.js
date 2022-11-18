@@ -8,8 +8,34 @@ import Project from './components/Project';
 function App() {
   const [showWhat, setShowWhat] = useState("About Me");
 
+  const projectArray = [
+    {
+      imagePath: "../assets/images/group-project-1-screenshot.jpg",
+      altText: "A screenshot of a website titled Comparing Cities",
+      projectTitle: "Comparing Cities",
+      link: "https://ivabon.github.io/01-group-project/"
+    },
+    {
+      imagePath: "../assets/images/group-project-2-screenshot.jpg",
+      altText: "A screenshot of a website titled Budgeteer. Link leads to GitHub repo",
+      projectTitle: "Budgeteer",
+      link: "https://github.com/Glitch0320/group5"
+    }
+  ]
+
   const handleClick = (e) => {
     setShowWhat(e.target.innerText);
+  }
+
+  const renderProject = (elem) => {
+    return (
+      <Project
+        imagePath={elem.imagePath}
+        altText={elem.altText}
+        projectTitle={elem.projectTitle}
+        link={elem.link}
+      />
+    )
   }
 
   const renderSwitch = (str) => {
@@ -18,7 +44,7 @@ function App() {
         return (
           <div>
             <Header text={str} />
-            <img src={require("./assets/images/profile-pic.jpg")} />
+            <img src={require("./assets/images/profile-pic.jpg")} alt="Conor Fortuna" />
             <h5>
               My name is Conor Fortuna. I graduated in May 2022 from the University of Minnesota Twin Cities with
               a major in chemistry and a minor in computer science. I am currently taking a full stack development
@@ -30,6 +56,9 @@ function App() {
         return (
           <div>
             <Header text={str} />
+            <div className="Project">
+              {projectArray.map((e) => renderProject(e))}
+            </div>
           </div>
         )
       case "Contact Me":
