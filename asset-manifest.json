@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React_Portfolio/static/css/main.c18da74b.css",
+    "main.js": "/React_Portfolio/static/js/main.9893e772.js",
+    "static/js/787.51972ac4.chunk.js": "/React_Portfolio/static/js/787.51972ac4.chunk.js",
+    "static/media/profile-pic.jpg": "/React_Portfolio/static/media/profile-pic.d8c381424209fef5dc4f.jpg",
+    "static/media/weather-dash.jpg": "/React_Portfolio/static/media/weather-dash.4d1b936b4252e6a26800.jpg",
+    "static/media/insomnia-screenshot.jpg": "/React_Portfolio/static/media/insomnia-screenshot.3c7d23b28e558e2d28c2.jpg",
+    "static/media/group-project-2-screenshot.jpg": "/React_Portfolio/static/media/group-project-2-screenshot.e0e497c9d095d58e56ca.jpg",
+    "static/media/team-profile-screenshot.jpg": "/React_Portfolio/static/media/team-profile-screenshot.9ad32cd9f7fff31a2283.jpg",
+    "static/media/group-project-1-screenshot.jpg": "/React_Portfolio/static/media/group-project-1-screenshot.6657e7ee5ce5c33a14ff.jpg",
+    "static/media/text-editor-site-screenshot.jpg": "/React_Portfolio/static/media/text-editor-site-screenshot.78ab084507d1d676b346.jpg",
+    "static/media/CS Resume.docx": "/React_Portfolio/static/media/CS Resume.f7f25232f2e769806dd5.docx",
+    "index.html": "/React_Portfolio/index.html",
+    "main.c18da74b.css.map": "/React_Portfolio/static/css/main.c18da74b.css.map",
+    "main.9893e772.js.map": "/React_Portfolio/static/js/main.9893e772.js.map",
+    "787.51972ac4.chunk.js.map": "/React_Portfolio/static/js/787.51972ac4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c18da74b.css",
+    "static/js/main.9893e772.js"
+  ]
+}
