@@ -70,7 +70,7 @@ button:hover {
   color: var(--darkBlue);
 }
 
-.App-header img {
+.App-header img { /* <-- This is what's causing the pfp and project images to have the same scale */
   height: calc(40vh + 2vmin);
   width: calc(14vw + 2vmin);
 }
