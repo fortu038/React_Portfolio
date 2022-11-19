@@ -18,6 +18,20 @@ a:hover {
   color: var(--softBlue)
 }
 
+button {
+  background: none;
+	color: var(--darkBlue);
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button:hover {
+  color: var(--softBlue);
+}
+
 @media screen and (min-width: 601px) {
   h2 {
     font-size: calc(20px + 2vmin);
@@ -78,6 +92,19 @@ a:hover {
   }
 }
 
+/* Contact section Styling */
+.Contact input {
+  width: 15vw;
+}
+
+.Contact button {
+  margin-top: 5vh;
+}
+
+#message {
+  height: 20vh;
+}
+
 /* Footer.js Styling */
 .Footer a:hover {
   opacity: 0.7;
@@ -85,7 +112,9 @@ a:hover {
 
 .Footer-image {
   max-height: 10vh;
-  margin: 1vh 5vw;
+  margin-top: 30vh;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
 }
 
 @media screen and (max-width: 600px) {
@@ -95,9 +124,6 @@ a:hover {
   }
 }
 
-/* Header.js Styling */
-
-
 /* Navigation.js Styling */
 .Navigation {
   display: flex;
@@ -106,20 +132,6 @@ a:hover {
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: var(--darkBlue);
-}
-
-.Navigation button {
-  background: none;
-	color: var(--darkBlue);
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-
-.Navigation button:hover {
-  color: var(--softBlue);
 }
 
 button.Active {

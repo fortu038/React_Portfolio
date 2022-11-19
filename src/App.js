@@ -25,26 +25,41 @@ function App() {
     },
     {
       image: require("./assets/images/text-editor-site-screenshot.jpg"),
-      altText: "A scrren of a text editor called Just Another Text Editor",
+      altText: "A screenshot of a text editor called Just Another Text Editor",
       projectTitle: "J.A.T.E.",
       link: "https://texteditor-production.up.railway.app/",
       repo: "https://github.com/fortu038/Text_Editor"
     },
+    {
+      image: require("./assets/images/weather-dash.jpg"),
+      altText: "A screenshot of a website called Weather Dashboard",
+      projectTitle: "Weather Dashboard",
+      link: "https://fortu038.github.io/06_weather_dashbaord/",
+      repo: "https://github.com/fortu038/06_weather_dashbaord"
+    },
+    {
+      image: require("./assets/images/team-profile-screenshot.jpg"),
+      altText: "A screenshot of a program called My Team",
+      projectTitle: "Team Profile Generator",
+      link: "https://drive.google.com/file/d/1hZ1ZsIgX8NVvUTKcH3EjpBHytNCekkqG/view",
+      repo: "https://github.com/fortu038/Team_Profile_Generator"
+    },
+    {
+      image: require("./assets/images/insomnia-screenshot.jpg"),
+      altText: "A screen of a post request to the poject in Insomnia",
+      projectTitle: "Social Network API",
+      link: "https://drive.google.com/file/d/1Yx1f296F3iEj-L96JOHRNNHGpQF5Bm3q/view",
+      repo: "https://github.com/fortu038/Social_Network_API"
+    }
   ]
 
   const handleClick = (e) => {
-    // console.log(showWhat);
-
     const showHolder = showWhat.split(' ').join('-');
-    // console.log(holder);
 
     var element = document.getElementById(showHolder);
     element.classList.remove("Active");
 
-    // console.log(e.target.innerText);
-
     const tarHolder = e.target.innerText.split(' ').join('-');
-    // console.log(tarHolder);
 
     document.getElementById(tarHolder).classList.add("Active");
     setShowWhat(e.target.innerText);
@@ -82,31 +97,23 @@ function App() {
             <Header text={str} />
             <div className="Project">
               {projectArray.map(elem => renderProject(elem))}
-              {/* <Project
-                image={projectArray[0].image}
-                altText={projectArray[0].altText}
-                projectTitle={projectArray[0].projectTitle}
-                link={projectArray[0].link}
-              />
-              <Project
-                image={projectArray[1].image}
-                altText={projectArray[1].altText}
-                projectTitle={projectArray[1].projectTitle}
-                link={projectArray[1].link}
-              />
-              <Project
-                image={projectArray[2].image}
-                altText={projectArray[2].altText}
-                projectTitle={projectArray[2].projectTitle}
-                link={projectArray[2].link}
-              /> */}
             </div>
           </div>
         )
       case "Contact Me":
         return (
-          <div>
+          <div className="Contact">
             <Header text={str} />
+            <h6>Note: The below contact form is currently not functional</h6>
+            <form>
+              <label for="name">Name:</label><br />
+              <input type="text" id="name" name="name" /><br />
+              <label for="email">Email:</label><br />
+              <input type="text" id="email" name="email" /><br />
+              <label for="message">Message:</label><br />
+              <input type="text" id="message" name="message" /><br />
+              <button type="button">Submit</button>
+            </form>
             <h5>My Primary Email: <a href="mailto:conorfortuna@gmail.com">conorfortuna@gmail.com</a></h5>
             <h5>My Secondary Email: <a href="mailto:fortu038@umn.edu">fortu038@umn.edu</a></h5>
             <h5>My Phone Number &#40;Placeholder&#41;: 123-456-7890</h5>
